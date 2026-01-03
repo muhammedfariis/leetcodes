@@ -30,14 +30,15 @@ let mostWordsFound = function(sentences=["alice and bob love leetcode", "i think
 
 console.log(mostWordsFound());
 
-let  kidsWithCandies = function(candies = [2,3,5,1,3], extraCandies = 3) {
-    let max = Math.max(...candies);
-    let result = [];
-    for(let i=0;i<candies.length;i++){
-        let total = candies[i] + extraCandies;
-        total >= max?result[i]= true :result[i]=false;  
-    }
-    return result;
+let kidsWithCandies = function(candies = [2,3,5,1,3], extraCandies = 3) {
+   let max = Math.max(...candies)
+   let ans = []
+   for(let i = 0 ; i<candies.length ; i++){
+     let sum = candies[i] + extraCandies
+     max<=sum ? candies[i] = true : candies[i] = false
+     ans.push(candies[i])
+   }
+   return ans
 }
 
 console.log(kidsWithCandies());
