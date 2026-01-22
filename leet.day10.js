@@ -18,3 +18,14 @@ let findMiddleIndex = function(nums = [2,3,-1,8,4]) {
 console.log(findMiddleIndex());
 
 
+let array = [1,2,4,5,7,8]
+
+let value = []
+
+for(let i = 1 ; i<=10 ; i++){
+    if(!array.includes(i)){
+        value.push(i)
+    }
+}
+
+console.log(value);
