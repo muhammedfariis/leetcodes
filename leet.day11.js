@@ -47,3 +47,6 @@ let countPrefix = function(words =["a","b","c","ab","bc" , "a" , "ab"], s = "abc
 console.log(
     countPrefixes()
 );
+
+
+let a = 10
