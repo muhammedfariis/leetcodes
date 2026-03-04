@@ -1,52 +1,52 @@
 
-// let countPrefixes = function(words =["a","b","c","ab","bc" , "a" , "ab"], s = "abc") {
+let countPrefixes = function(words =["a","b","c","ab","bc" , "a" , "ab"], s = "abc") {
 
-//     let count = 0
+    let count = 0
 
-//     for(let i = 0 ; i<words.length ; i++){
+    for(let i = 0 ; i<words.length ; i++){
        
-//         let match = 0 
+        let match = 0 
 
-//         for(let k = 0 ; k<words[i].length ; k++){
-//             if(words[i][k]===s[k]){
-//                 match++
-//             }
-//         }
+        for(let k = 0 ; k<words[i].length ; k++){
+            if(words[i][k]===s[k]){
+                match++
+            }
+        }
 
-//         if(match === words[i].length){
-//             count++
-//         }
-//     }
+        if(match === words[i].length){
+            count++
+        }
+    }
     
-//     return count
-// };
+    return count
+};
 
-// console.log(
-//     countPrefixes()
-// );
-
-
+console.log(
+    countPrefixes()
+);
 
 
 
-// console.log(".................\n\n\n\n");
+
+
+console.log(".................\n\n\n\n");
 
 
 
-// let countPrefix = function(words =["a","b","c","ab","bc" , "a" , "ab"], s = "abc") {
+let countPrefix = function(words =["a","b","c","ab","bc" , "a" , "ab"], s = "abc") {
 
-//     let count = 0
-//    for(let i = 0 ; i<words.length ; i++){
-//      if(s.startsWith(words[i])){
-//         count++
-//      }
-//    }
-//     return count
-// };
+    let count = 0
+   for(let i = 0 ; i<words.length ; i++){
+     if(s.startsWith(words[i])){
+        count++
+     }
+   }
+    return count
+};
 
-// console.log(
-//     countPrefixes()
-// );
+console.log(
+    countPrefixes()
+);
 
 
 let str = "malayalam"
@@ -55,6 +55,8 @@ for(let i = 0 ; i<str.length ; i++){
     n = str[i]+n
 }
 console.log(n);
+
+
 
 
 
